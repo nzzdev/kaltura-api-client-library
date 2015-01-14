@@ -1,5 +1,5 @@
 {
-    "name": "rkreich/kaltura-api-client-library",
+    "name": "nzzdev/kaltura-api-client-library",
     "description": "A Composer package for the Kaltura API client library",
     "keywords": ["kaltura", "client library", "video", "open source video", "video platform", "api"],
     "minimum-stability": "dev",
