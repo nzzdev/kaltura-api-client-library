@@ -304,10 +304,7 @@ class Base
 		curl_setopt($ch, CURLOPT_ENCODING, 'gzip,deflate');
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_USERAGENT, $this->config->getUserAgent());
-		if (count($files) > 0)
-			curl_setopt($ch, CURLOPT_TIMEOUT, 0);
-		else
-			curl_setopt($ch, CURLOPT_TIMEOUT, $this->config->getCurlTimeout());
+		curl_setopt($ch, CURLOPT_TIMEOUT, $this->config->getCurlTimeout());
 			
 		if ($this->config->getStartZendDebuggerSession() === true)
 		{
